@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPS Test</title>
+</head>
+<body>
+    {% if hide=='0' %}
+    <a href=gps ><button class=grey style="height:75px;width:150px">Get GPS</button></a>
+    {% endif %}
+    {% if gps=='1' %}
+    <br>
+    <h2>Latitude Longitude</h2>
+    {{gpscoord}}
+    <br>
+    <h2>Location</h2>
+    {{location}}
+    <a href=map ><button class=grey style="height:75px;width:150px">View on Map</button></a>
+    {% endif %}
+</body>
+</html> 
